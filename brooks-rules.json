@@ -1,0 +1,818 @@
+[
+  {
+    "num": "1.1",
+    "rule": "A programming systems product takes about nine times as much effort as the component programs written separately for private use. I estimate that productizing imposes a factor of three; and that designing, integrating, and testing components into a coherent system imposes a factor of three; and that these cost components are essentially independent of each other."
+  },
+  {
+    "num": "1.2",
+    "rule": "The craft of programming gratifies creative longings built deep within us and delights sensibilities we have in common with all men, providing five kinds of joys:<br>\n• The joy of making things<br>\n• The joy of making things that are useful to other people<br>\n• The fascination of fashioning puzzle-like objects of interlocking moving parts<br>\n• The joy of always learning, of a nonrepeating task<br>\n• The delight of working in a medium so tractable — pure thought-stuff — which nevertheless exists, moves, and works in a way that word-objects do not."
+  },
+  {
+    "num": "1.3",
+    "rule": "Likewise the craft has special woes inherent in it.<br>\n• Adjusting to the requirement of perfection is the hardest part of learning to program.<br>\n• Others set one’s objectives and one must depend upon things (especially programs) one cannot control; the authority is not equal to the responsibility.<br>\n• This sounds worse than it is: actual authority comes from momentum of accomplishment.<br>\n• With any creativity come dreary hours of painstaking labor -- programming is no exception.<br>\n• The programming project converges more slowly the nearer one gets to the end, whereas one expects it to converge faster as one approaches the end.<br>\n• One’s product is always threatened with obsolescence before completion. The real tiger is never a match for the paper one, unless real use is wanted."
+  },
+  {
+    "num": "2.1",
+    "rule": "More programming projects have gone awry for lack of calendar time than for all other causes combined."
+  },
+  {
+    "num": "2.2",
+    "rule": " Good cooking takes time; some tasks cannot be hurried without spoiling the result."
+  },
+  {
+    "num": "2.3",
+    "rule": " All programmers are optimists: “All will go well.”"
+  },
+  {
+    "num": "2.4",
+    "rule": " Because the programmer builds with pure thought-stuff, we expect few difficulties in implementation."
+  },
+  {
+    "num": "2.5",
+    "rule": " But our ideas themselves are faulty, so we have bugs."
+  },
+  {
+    "num": "2.6",
+    "rule": " Our estimating techniques, built around cost-accounting, confuse effort and progress. The man-month is a fallacious and dangerous myth, for it implies that men and months are interchangeable."
+  },
+  {
+    "num": "2.7",
+    "rule": " Partitioning a task among multiple people occasions extra communication effort — training and intercommunication."
+  },
+  {
+    "num": "2.8",
+    "rule": " My rule of thumb is 1/3 of the schedule for design, 1/6 for coding, 1/4 for component testing, and 1/4 for system testing."
+  },
+  {
+    "num": "2.9",
+    "rule": " As a discipline, we lack estimating data."
+  },
+  {
+    "num": "2.10",
+    "rule": " Because we are uncertain about our scheduling estimates, we often lack the courage to defend them stubbornly against management and customer pressure."
+  },
+  {
+    "num": "2.11",
+    "rule": " Brooks’s Law: Adding manpower to a late software project makes it late"
+  },
+  {
+    "num": "2.12",
+    "rule": " Adding people to a software project increases the total effort necessary in three ways: the work and disruption of repartitioning itself, training the new people, and added intercommunication."
+  },
+  {
+    "num": "3.1",
+    "rule": " Very good professional programmers are ten times as productive as poor ones, at same training and two-year experience level. (Sackman, Grant, and Erickson)"
+  },
+  {
+    "num": "3.2",
+    "rule": " Sackman, Grant, and Erickson’s data showed no correlation whatsoever between experience and performance. I doubt the universality of that result."
+  },
+  {
+    "num": "3.3",
+    "rule": " A small sharp team is best — as few minds as possible."
+  },
+  {
+    "num": "3.4",
+    "rule": " A team of two, with one leader, is often the best use of minds. (Note God’s plan for marriage.)"
+  },
+  {
+    "num": "3.5",
+    "rule": " A small sharp team is too slow for really big systems."
+  },
+  {
+    "num": "3.6",
+    "rule": " Most experiences with really large systems show the brute-force approach to scaling up to be costly, slow, inefficient, and to produce systems that are not conceptually integrated."
+  },
+  {
+    "num": "3.7",
+    "rule": " A chief-programmer, surgical-team organization offers a way to get the product integrity of few minds and the total productivity of many helpers, with radically reduced communication."
+  },
+  {
+    "num": "4.1",
+    "rule": " Conceptual integrity is the most important consideration in system design."
+  },
+  {
+    "num": "4.2",
+    "rule": " The ratio of function to conceptual complexity is the ultimate test of system design, not just the richness of function. (This ratio is a measure of ease of use, valid over both simple and difficult uses.)"
+  },
+  {
+    "num": "4.3",
+    "rule": " To achieve conceptual integrity, a design must proceed from one mind or a small group of agreeing minds."
+  },
+  {
+    "num": "4.4",
+    "rule": " Separation of architectural effort from implementation is a very powerful way of getting conceptual integration on very large projects. (Small ones, too.)"
+  },
+  {
+    "num": "4.5",
+    "rule": " If a system is to have conceptual integrity, someone must control the concepts. That is an aristocracy that needs no apology."
+  },
+  {
+    "num": "4.6",
+    "rule": " Discipline is good for art. The external provision of an architecture enhances, not cramps, the creative style of an implementing group."
+  },
+  {
+    "num": "4.7",
+    "rule": " A conceptually integrated system is faster to build and to test."
+  },
+  {
+    "num": "4.8",
+    "rule": " Much of software architecture, implementation, and realization can proceed in parallel. (Hardware and software design can likewise proceed in parallel.)"
+  },
+  {
+    "num": "5.1",
+    "rule": " Early and continuous communication can give the architect good cost readings and the builder confidence in the design, without blurring the clear division of responsibilities."
+  },
+  {
+    "num": "5.2",
+    "rule": "How an architect can successfully influence implementation:<br>\n• Remember that the builder has the creative responsibility for implementation; the architect only suggests.<br>\n• Always be ready to suggest a way of implementing anything one specifies; be prepared to accept any other equally good way.<br>\n• Deal quietly and privately in such suggestions.<br>\n• Be ready to forgo credit for suggested improvements.<br>\n• Listen to the builder’s suggestions for architecture improvements.<br>\n"
+  },
+  {
+    "num": "5.3",
+    "rule": " The second is the most dangerous system a person ever designs; the general tendency is to over-design it."
+  },
+  {
+    "num": "5.4",
+    "rule": " OS/360 is a good example of the second system effect. (Windows NT seems to be a 1990s example.)"
+  },
+  {
+    "num": "5.5",
+    "rule": " Assigning a priori values in bytes and microseconds to functions is a worthwhile discipline."
+  },
+  {
+    "num": "6.1",
+    "rule": " Even when a design team is large, the results must be reduced to writing by one or two, in order that the mini decisions be consistent."
+  },
+  {
+    "num": "6.2",
+    "rule": " It is important to explicitly define the parts of an architecture that are not prescribed as carefully as those that are."
+  },
+  {
+    "num": "6.3",
+    "rule": " One needs both a formal definition of a design, for precision, and a prose definition for comprehensibility."
+  },
+  {
+    "num": "6.4",
+    "rule": " One of the formal and prose definitions must be standard, and the other derivative. Either definition can serve in either role."
+  },
+  {
+    "num": "6.5",
+    "rule": " An implementation, including a simulation, can serve as an architectural definition; such use has formidable disadvantages."
+  },
+  {
+    "num": "6.6",
+    "rule": " Direct incorporation is a very clean technique for enforcing an architectural standard in software. (In hardware, too—consider the Mac WIMP interface built into ROM.)"
+  },
+  {
+    "num": "6.7",
+    "rule": " An architectural “definition will be cleaner and the (architectural) discipline tighter if at least two implementations are built initially.”"
+  },
+  {
+    "num": "6.8",
+    "rule": " It is important to allow telephone interpretations by an architect in response to implementers’ queries; it is imperative to log these and publish them. (Electronic mail is now the medium of choice.)"
+  },
+  {
+    "num": "6.9",
+    "rule": " “The project manager’s best friend is his daily adversary, the independent product testing organization.”"
+  },
+  {
+    "num": "7.1",
+    "rule": " The Tower of Babel project failed because of lack of communication and of its consequent, organization."
+  },
+  {
+    "num": "7.2",
+    "rule": " Schedule disaster, functional misfit, and system bugs all arise because the left hand doesn’t know what the right hand is doing. Teams drift apart in assumptions."
+  },
+  {
+    "num": "7.3",
+    "rule": " Teams should communicate with one another in as many ways as possible: informally, by regular project meetings with technical briefings, and via a shared formal project workbook. (And by electronic mail.)"
+  },
+  {
+    "num": "7.4",
+    "rule": " A project workbook is not so much a separate document as it is a structure imposed on the documents that the project will be producing anyway."
+  },
+  {
+    "num": "7.5",
+    "rule": " All the documents of the project need to be part of this (workbook) structure."
+  },
+  {
+    "num": "7.6",
+    "rule": " The workbook structure needs to be designed carefully and early."
+  },
+  {
+    "num": "7.7",
+    "rule": " Properly structuring the ongoing documentation from the beginning molds later writing into segments that fit into that structure and will improve the product manuals."
+  },
+  {
+    "num": "7.8",
+    "rule": " Each team member should see all the (workbook) material. (I would now say, each team member should be able to see all of it. That is, WorldWide Web pages would suffice.)"
+  },
+  {
+    "num": "7.9",
+    "rule": " Timely updating is of critical importance."
+  },
+  {
+    "num": "7.10",
+    "rule": " The user needs to have attention especially drawn to changes since his last reading, with remarks on their significance."
+  },
+  {
+    "num": "7.11",
+    "rule": " The OS/360 Project workbook started with paper and switched to microfiche."
+  },
+  {
+    "num": "7.12",
+    "rule": " Today (even in 1975), the shared electronic notebook is much better, cheaper, and simpler mechanism for achieving all these goals."
+  },
+  {
+    "num": "7.13",
+    "rule": " One still has to mark the text with (the functional equivalent of) change bars and revision dates. One still needs a LIFO electronic change summary."
+  },
+  {
+    "num": "7.14",
+    "rule": " Parnas argues strongly that the goal of everyone seeing everything is totally wrong; parts should be encapsulated so that no one needs to or is allowed to see the internals of any parts other than his own, but should see only the interfaces."
+  },
+  {
+    "num": "7.15",
+    "rule": " Parnas’s proposal is a recipe for disaster. (I have been quite convinced otherwise by Parnas, and totally changed my mind.)"
+  },
+  {
+    "num": "7.16",
+    "rule": " The purpose of organization is to reduce the amount of communication and coordination necessary."
+  },
+  {
+    "num": "7.17",
+    "rule": " Organization embodies division of labor and specialization of function in order to obviate communication."
+  },
+  {
+    "num": "7.18",
+    "rule": " The conventional tree organization reflects the authority structure principle that no person can serve two masters."
+  },
+  {
+    "num": "7.19",
+    "rule": " The communication structure in an organization is a network, not a tree, so all kinds of special organization mechanisms (“dotted lines”) have to be devised to overcome the communication deficiencies of the tree-structured organization."
+  },
+  {
+    "num": "7.20",
+    "rule": " Every subproject has two leadership roles to be filled, that of the producer and that of the technical director, or architect. The functions of the two roles are quite distinct and require different talents."
+  },
+  {
+    "num": "7.21",
+    "rule": "Any of three relationships among the two roles can be quite effective:<br>\n• The producer and director can be the same.<br>\n• The producer may be boss, and the director the producer’s right-hand person.<br>\n• The director may be boss, and the producer the director’s right-hand person."
+  },
+  {
+    "num": "8.1",
+    "rule": " One cannot accurately estimate the total effort or schedule of a programming project by simply estimating the coding time and multiplying by factors for the other parts of the task."
+  },
+  {
+    "num": "8.2",
+    "rule": " Data for building isolated small systems are not applicable to programming systems projects."
+  },
+  {
+    "num": "8.3",
+    "rule": " Programming increases goes as a power of program size."
+  },
+  {
+    "num": "8.4",
+    "rule": "Some published studies show the exponent to be about 1.5. (Boehm’s data do not at all agree with this, but vary from 1.05 to 1.2.)"
+  },
+  {
+    "num": "8.5",
+    "rule": " Portman’s ICL data show fulltime programmers applying only about 50 percent of their time to programming and debugging, versus other overheadtype tasks."
+  },
+  {
+    "num": "8.6",
+    "rule": " Aron’s IBM data show productivity varying from 1.5 K lines of code (KLOC) per man-year to 10 KLOC/man-year as a function of the number of interactions among system parts."
+  },
+  {
+    "num": "8.7",
+    "rule": " Harr’s Bell Labs data show productivities on operating-systems-type work to run about 0.6 KLOC/man-year and on compiler-type work about 2.2 KLOC/man-year for finished products."
+  },
+  {
+    "num": "8.8",
+    "rule": " Brooks’s OS/360 data agrees with Harr’s: 0.6—0.8 KLOC/man-year on operating systems and 2—3 KLOC/man-year on compilers."
+  },
+  {
+    "num": "8.9",
+    "rule": " Corbató’s MIT Project MULTICS data show productivity of 1.2 KLOC/man-year on a mix of operating systems and compilers, but these are PL/I lines of code, whereas all the other data are assembler lines of code!"
+  },
+  {
+    "num": "8.10",
+    "rule": " Productivity seems constant in terms of elementary statements."
+  },
+  {
+    "num": "8.11",
+    "rule": " Programming productivity may be increased as much as five times when a suitable high level language is used."
+  },
+  {
+    "num": "9.1",
+    "rule": " Aside from running time, the memory space occupied by a program is a principal cost. This is especially true for operating systems, where much is resident all the time."
+  },
+  {
+    "num": "9.2",
+    "rule": " Even so, money spent on memory for program residence may yield very good functional value per dollar, better than other ways of investing in configuration. Program size is not bad; unnecessary size is."
+  },
+  {
+    "num": "9.3.",
+    "rule": " The software builder must set size targets, control size, and devise size reduction techniques, just as the hardware builder does for components."
+  },
+  {
+    "num": "9.4",
+    "rule": " Size budgets must be explicit not only about resident size but also about the disk accesses occasioned by program fetches."
+  },
+  {
+    "num": "9.5",
+    "rule": " Size budgets have to be tied to function assignments; define exactly what a module must do when you specify how big it must be."
+  },
+  {
+    "num": "9.6",
+    "rule": " On large teams, sub-teams tend to sub-optimize to meet their own targets rather than think about the total effect on the user. This breakdown in orientation is a major hazard of large projects."
+  },
+  {
+    "num": "9.7",
+    "rule": " All during implementation, the system architects must maintain constant vigilance to ensure continued system integrity."
+  },
+  {
+    "num": "9.8",
+    "rule": " Fostering a total system, user oriented attitude may well be the most important function of the programming manager."
+  },
+  {
+    "num": "9.9",
+    "rule": " An early policy decision is to decide how fine grained the user choice of options will be, since packaging them in clumps saves memory space (and often marketing costs)."
+  },
+  {
+    "num": "9.10",
+    "rule": " The size of the transient area, hence of the amount of program per disk fetch, is a crucial decision, since performance is a superlinear function of that size. (This whole decision has been obsoleted, first by virtual memory, then by cheap real memory. Users now typically buy enough real memory to hold all the code of major applications.)"
+  },
+  {
+    "num": "9.11",
+    "rule": " To make good space time tradeoffs, a team needs to be trained in the programming techniques peculiar to a particular language or machine, especially a new one."
+  },
+  {
+    "num": "9.12",
+    "rule": " Programming has a technology, and every project needs a library of standard components."
+  },
+  {
+    "num": "9.13",
+    "rule": " Program libraries should have two versions of each component, the quick and the squeezed. (This seems obsolete today.)"
+  },
+  {
+    "num": "9.14",
+    "rule": " Lean, spare, fast programs are almost always the result of strategic breakthrough, rather than tactical cleverness."
+  },
+  {
+    "num": "9.15",
+    "rule": " Often such a breakthrough will be a new algorithm."
+  },
+  {
+    "num": "9.16",
+    "rule": " More often, the breakthrough will come from redoing the representation of the data or tables. Representation is the essence of programming."
+  },
+  {
+    "num": "10.1",
+    "rule": " “The hypothesis: Amid a wash of paper, a small number of documents become the critical pivots around which every project’s management revolves. These are the manager’s chief personal tools.”"
+  },
+  {
+    "num": "10.2",
+    "rule": " For a computer development project, the critical documents are the objectives, manual, schedule, budget, organization chart, floorspace allocation, and the estimate, forecast, and prices of the machine itself."
+  },
+  {
+    "num": "10.3",
+    "rule": " For a university department, the critical documents are similar: the objectives, degree requirements, course descriptions, research proposals, class schedule and teaching plan, budget, floorspace allocation, and assignments of staff and graduate assistants."
+  },
+  {
+    "num": "10.4",
+    "rule": " For a software project, the needs are the same: the objectives, user manual, internals documentation, schedule, budget, organization chart, and floorspace allocation."
+  },
+  {
+    "num": "10.5",
+    "rule": " Even on a small project, therefore, the manager should from the beginning formalize such a set of documents."
+  },
+  {
+    "num": "10.6",
+    "rule": " Preparing each document of this small set focuses thought and crystallizes discussion. The act of writing requires hundreds of mini-decisions, and it is the existence of these that distinguish clear, exact policies from fuzzy ones."
+  },
+  {
+    "num": "10.7",
+    "rule": " Maintaining each critical document provides a status surveillance and warning mechanism."
+  },
+  {
+    "num": "10.8",
+    "rule": " Each document itself serves as a checklist and a database."
+  },
+  {
+    "num": "10.9",
+    "rule": " The project manager’s fundamental job is to keep every body going in the same direction."
+  },
+  {
+    "num": "10.10",
+    "rule": " The project manager’s chief daily task is communication, not decision making; the documents communicate the plans and decisions to the whole team."
+  },
+  {
+    "num": "10.11",
+    "rule": " Only a small part of a technical project manager’s time -- perhaps 20 percent -— is spent on tasks where he needs information from outside his head."
+  },
+  {
+    "num": "10.12",
+    "rule": " For this reason, the touted market concept of a “management total information system” to support executives is not based on a valid model of executive behaviour."
+  },
+  {
+    "num": "11.1",
+    "rule": " Chemical engineers have learned not to take a process from the lab bench to the factory in one step, but to build a pilot plant to give experience in scaling quantities up and operating in non-protective environments."
+  },
+  {
+    "num": "11.2",
+    "rule": " This intermediate step is equally necessary for programming products, but software engineers do not yet routinely field test a pilot system before undertaking to deliver the real product. (This has now become common practice, with a beta version. This is not the same as a prototype with limited function, an alpha version, which I would also advocate.)"
+  },
+  {
+    "num": "11.3",
+    "rule": " For most projects, the first system built is barely usable, too slow, too big, too hard to use, or all three."
+  },
+  {
+    "num": "11.4",
+    "rule": " The discard and redesign may be done in one lump, or piece by piece, but it will be done."
+  },
+  {
+    "num": "11.5",
+    "rule": " Delivering the first system, the throwaway, to users will buy time, but only at the cost of agony for the user, distraction for the builders supporting it while they do the redesign, and a bad reputation for the product that will be hard to live down."
+  },
+  {
+    "num": "11.6",
+    "rule": " Hence, plan to throw one away; you will, anyhow."
+  },
+  {
+    "num": "11.7",
+    "rule": " “The programmer delivers satisfaction of a user need rather than any tangible product.” (Cosgrove)"
+  },
+  {
+    "num": "11.8",
+    "rule": " Both the actual need and the user’s perception of that need will change as programs are built, tested, and used."
+  },
+  {
+    "num": "11.9",
+    "rule": " The tractability and the invisibility of the software product expose its builders (exceptionally) to perpetual changes in requirements."
+  },
+  {
+    "num": "11.10",
+    "rule": " Some valid changes in objectives (and in development strategies) are inevitable, and it is better to be prepared for them than to assume that they will not come."
+  },
+  {
+    "num": "11.11",
+    "rule": " The techniques for planning a software product for change, especially structured programming with careful module interface documentation, are well known but not uniformly practised. It also helps to use table-driven techniques wherever possible. (Modern memory costs and sizes make such techniques better and better.)"
+  },
+  {
+    "num": "11.12",
+    "rule": " Use high level language, compile-time operations, incorporations of declarations by reference, and self-documenting techniques to reduce errors induced by change."
+  },
+  {
+    "num": "11.13",
+    "rule": " Quantify changes into well defined numbered versions. (Now standard practice.)"
+  },
+  {
+    "num": "11.14",
+    "rule": " Programmer reluctance to document designs comes not so much from laziness as from the hesitancy to undertake defence of decisions that the designer knows are tentative. (Cosgrove)"
+  },
+  {
+    "num": "11.15",
+    "rule": " Structuring an organization for change is much harder than designing a system for change."
+  },
+  {
+    "num": "11.16",
+    "rule": " The project boss must work at keeping the managers and the technical people as interchangeable as their talents allow; in particular, one wants to be able to move people easily between technical and managerial roles."
+  },
+  {
+    "num": "11.17",
+    "rule": " The barriers to effective dual-ladder organization are sociological, and they must be fought with constant vigilance and energy."
+  },
+  {
+    "num": "11.18",
+    "rule": " It is easy to establish corresponding salary scales for the corresponding rungs on a dual ladder, but it requires strong proactive measures to give them corresponding prestige: equal offices, equal support services, overcompensating management actions."
+  },
+  {
+    "num": "11.19",
+    "rule": " Organizing as a surgical team is a radical attack on all aspects of this problem. It is really the long-run answer to the problem of flexible organization."
+  },
+  {
+    "num": "11.20",
+    "rule": " Program maintenance is fundamentally different from hardware maintenance; it consists chiefly of changes that repair design defects, add incremental function, or adapt to changes in the use environment or configuration."
+  },
+  {
+    "num": "11.21",
+    "rule": " The total lifetime cost of maintaining a widely used program is typically 40 percent or more of the cost of developing it."
+  },
+  {
+    "num": "11.22",
+    "rule": " Maintenance cost is strongly affected by the number of users. More users find more bugs."
+  },
+  {
+    "num": "11.23",
+    "rule": " Campbell points out an interesting drop-and-climb curve in bugs per month over a product’s life."
+  },
+  {
+    "num": "11.24",
+    "rule": " Fixing a defect has a substantial (20 to 50 percent) chance of introducing another."
+  },
+  {
+    "num": "11.25",
+    "rule": " After each fix, one must run the entire bank of test cases previously run against a system to ensure that it has not been damaged in an obscure way."
+  },
+  {
+    "num": "11.26",
+    "rule": " Methods of designing programs so as to eliminate or at least illuminate side effects can have an immense payoff in maintenance costs."
+  },
+  {
+    "num": "11.27",
+    "rule": " So can methods of implementing designs with fewer people, fewer interfaces, and fewer bugs."
+  },
+  {
+    "num": "11.28",
+    "rule": " Lehman and Belady find that the total number of modules increases linearly with the release number of a large operating system (OS/360), but that the number of modules affected increases exponentially with the release number."
+  },
+  {
+    "num": "11.29",
+    "rule": " All repairs tend to destroy structure, to increase the entropy and disorder of a system. Even the most skilful program maintenance only delays the program’s subsidence into unfixable chaos, from which there has to be a ground-up redesign. (Many of the real needs for upgrading a program, such as performance, especially attack its internal structural boundaries. Often the original boundaries occasioned the deficiencies that surface later.)"
+  },
+  {
+    "num": "12.1",
+    "rule": "The manager of a project needs to establish a philosophy and set aside resources for the building of common tools, and at the same time to recognize the need for personalized tools."
+  },
+  {
+    "num": "12.2",
+    "rule": "Teams building operating systems need a target machine of their own on which to debug; it needs maximum memory rather than maximum speed, and a system programmer to keep the standard software current and serviceable."
+  },
+  {
+    "num": "12.3",
+    "rule": "The debugging machine, or its software, also needs to be instrumented, so that counts and measurements of all kinds of program parameters can be automatically made."
+  },
+  {
+    "num": "12.4",
+    "rule": "The requirement for target machine use has a peculiar growth curve: low activity followed by explosive growth, then levelling off."
+  },
+  {
+    "num": "12.5",
+    "rule": "System debugging, like astronomy, has always been done chiefly at night."
+  },
+  {
+    "num": "12.6",
+    "rule": "Allocating substantial blocks of target machine time to one sub-team at a time proved the best way to schedule, much better than interleaving sub-team use, despite theory."
+  },
+  {
+    "num": "12.7",
+    "rule": "This preferred method of scheduling scarce computers by blocks has survived 20 years (in 1975) of technology change because it is most productive. (It still is, in 1995)."
+  },
+  {
+    "num": "12.8",
+    "rule": "If a target computer is new, one needs a logical simulator for it. One gets it sooner, and it provides a dependable debugging vehicle even after one has a real machine."
+  },
+  {
+    "num": "12.9",
+    "rule": "A master program library should be divided into (1) a set of individual playpens, (2) a system integration sub-library, currently under system test, and (3) a released version. Formal separation and progression gives control.;"
+  },
+  {
+    "num": "12.10",
+    "rule": "The tool that saves the most labour in a programming project is probably a text editing system."
+  },
+  {
+    "num": "12.11",
+    "rule": "Voluminosity in system documentation does indeed introduce a new kind of incomprehensibility (see Unix, for example), but it is far preferable to the severe under-documentation that is so common."
+  },
+  {
+    "num": "12.12",
+    "rule": "Build a performance simulator, outside in, top down. Start it very early. Listen when it speaks."
+  },
+  {
+    "num": "12.13",
+    "rule": "Only sloth and inertia prevent the universal adoption of high level language and interactive programming. (And today they have been adopted universally.)"
+  },
+  {
+    "num": "12.14",
+    "rule": "high level language improves not only productivity but also debugging; fewer bugs and easier to find."
+  },
+  {
+    "num": "12.15",
+    "rule": "The classical objections of function, object code space, and object code speed have been made obsolete by the advance of language and compiler technology."
+  },
+  {
+    "num": "12.16",
+    "rule": "The only reasonable candidate for system programming today is PLI. (No longer true.)"
+  },
+  {
+    "num": "12.17",
+    "rule": "Interactive systems will never displace batch systems for some applications. (Still true.)"
+  },
+  {
+    "num": "12.18",
+    "rule": "Debugging is the hard and slow part of system programming, and slow turnaround is the bane of debugging."
+  },
+  {
+    "num": "12.19",
+    "rule": "Limited evidence shows that interactive programming at least doubles productivity in system programming."
+  },
+  {
+    "num": "13.1",
+    "rule": "The detailed, painstaking architectural effort implied in Chapters 4, 5, and 6 not only makes a product easier to use, it makes it easier to build and reduces the number of system bugs that have to be found."
+  },
+  {
+    "num": "13.2",
+    "rule": "Vyssotsky says “Many, many failures concern exactly those aspects that were never quite specified.”"
+  },
+  {
+    "num": "13.3",
+    "rule": "Long before any code itself, the specification must be handed to an outside testing group to be scrutinized for completeness and clarity. The developers themselves cannot do this. (Vyssotsky)"
+  },
+  {
+    "num": "13.4",
+    "rule": "“Wirth’s top-down design (by stepwise refinement) is the most important new programming formalization of the (1965—1975) decade.”"
+  },
+  {
+    "num": "13.5",
+    "rule": "Wirth advocates using as high level a notation as possible on each step."
+  },
+  {
+    "num": "13.6",
+    "rule": "A good topdown design avoids bugs in four ways."
+  },
+  {
+    "num": "13.7",
+    "rule": "Sometimes one has to go back, scrap a high level, and start over."
+  },
+  {
+    "num": "13.8",
+    "rule": "Structured programming, designing programs whose control structures consist only of a specified set that govern blocks of code (versus miscellaneous branching), is a sound way to avoid bugs and is the right way to think."
+  },
+  {
+    "num": "13.9",
+    "rule": "Gold’s experimental results show three times as much progress is made in the first interaction of an interactive debugging session as on subsequent interactions. It still pays to plan debugging carefully before signing on. (I think it still does, in 1995.)"
+  },
+  {
+    "num": "13.10",
+    "rule": "I find that proper use of a good (quick response interactive debugging) system requires two hours at the desk for each two hour session on the machine: one hour in sweeping up and documenting after the session and one in planning changes and tests for the next time."
+  },
+  {
+    "num": "13.11",
+    "rule": "System debugging (in contrast to component debugging) will take longer than one expects."
+  },
+  {
+    "num": "13.12",
+    "rule": "The difficulty of system debugging justifies a thoroughly systematic and planned approach."
+  },
+  {
+    "num": "13.13",
+    "rule": "One should begin system debugging only after the pieces seem to work (versus bolt-it-together-and-try in order to smoke out the interface bugs; and versus starting system debugging when the component bugs are fully known but not fixed.) (This is especially true for teams.)"
+  },
+  {
+    "num": "13.14",
+    "rule": "It is worthwhile to build lots of debugging scaffolding and test code, perhaps even 50 percent as much as the product being debugged."
+  },
+  {
+    "num": "13.15",
+    "rule": "One must control and document changes and versions, with team members working in playpen copies."
+  },
+  {
+    "num": "13.16",
+    "rule": "Add one component at a time during system debugging."
+  },
+  {
+    "num": "13.17",
+    "rule": "Lehman and Belady offer evidence the change quanta should be large and infrequent or else very small and frequent. The latter is more subject to instability. (A Microsoft team makes small frequent quanta work. The growing system is rebuilt every night.)"
+  },
+  {
+    "num": "14.1",
+    "rule": "“How does a project get to be a year late? One day at a time.”"
+  },
+  {
+    "num": "14.2",
+    "rule": "Day by day schedule slippage is harder to recognize, harder to prevent, and harder to make up than calamities."
+  },
+  {
+    "num": "14.3",
+    "rule": "The first step in controlling a big project on a tight schedule is to have a schedule, made up of milestones and dates for them."
+  },
+  {
+    "num": "14.4",
+    "rule": "Milestones must be concrete, specific, measurable events defined with knife-edge sharpness."
+  },
+  {
+    "num": "14.5",
+    "rule": "A programmer will rarely lie about milestone progress, if the milestone is so sharp he can’t deceive himself."
+  },
+  {
+    "num": "14.6",
+    "rule": "Studies of estimating behavior by government contractors on large projects show that activity time estimates revised carefully every two weeks do not significantly change as the start time approaches, that during the activity overestimates come steadily down; and that underestimates do not change until about three weeks before scheduled completion."
+  },
+  {
+    "num": "14.7",
+    "rule": "Chronic schedule slippage is a morale killer. (Jim McCarthy of Microsoft says, “If you miss one deadline, make sure you make the next one.”2)"
+  },
+  {
+    "num": "14.8",
+    "rule": "Hustle is essential for great programming teams, just as for great baseball teams."
+  },
+  {
+    "num": "14.9",
+    "rule": "There is no substitute for a critical path schedule to enable one to tell which slips matter how much."
+  },
+  {
+    "num": "14.10",
+    "rule": "The preparation of a critical path chart is the most valuable part of its use, since laying out the network, identifying the dependencies, and estimating the segments force a great deal of very specific planning very early in a project."
+  },
+  {
+    "num": "14.11",
+    "rule": "The first chart is always terrible, and one invents and invents in making the next one."
+  },
+  {
+    "num": "14.12",
+    "rule": "A critical path chart answers the demoralizing excuse, “The other piece is late, anyhow.”"
+  },
+  {
+    "num": "14.13",
+    "rule": "Every boss needs both exception information that requires action and a status picture for education and distant early warning."
+  },
+  {
+    "num": "14.14",
+    "rule": "Getting the status is hard, since subordinate managers have every reason not to share it."
+  },
+  {
+    "num": "14.15",
+    "rule": "By bad action, a boss can guarantee to squelch full status disclosure; conversely, carefully separating status reports and accepting them without panic or preemption will encourage honest reporting."
+  },
+  {
+    "num": "14.16",
+    "rule": "One must have review techniques by which true status becomes known to all players. For this purpose a milestone schedule and completion document is the key."
+  },
+  {
+    "num": "14.17",
+    "rule": "Vyssotsky: “I have found it handy to carry both ‘scheduled’ (boss’s dates) and ‘estimated’ (lowest level manager’s dates) dates in the milestone report. The project manager has to keep his fingers off the estimated dates.”"
+  },
+  {
+    "num": "14.18",
+    "rule": "A small Plans and Controls team that maintains the milestone report is invaluable for a large project."
+  },
+  {
+    "num": "15.1",
+    "rule": "For the program product, the other face to the user, the documentation, is fully as important as the face to the machine."
+  },
+  {
+    "num": "15.2",
+    "rule": "Even for the most private of programs, prose documentation is necessary, for memory will fail the user-author."
+  },
+  {
+    "num": "15.3",
+    "rule": "Teachers and managers have by and large failed to instill in programmers an attitude about documentation that will inspire for a lifetime, overcoming sloth and schedule pressure."
+  },
+  {
+    "num": "15.4",
+    "rule": "This failure is not due so much to lack of zeal or eloquence as to a failure to show how to document effectively and economically."
+  },
+  {
+    "num": "15.5",
+    "rule": "Most documentation fails in giving too little overview. Stand way back and zoom in slowly."
+  },
+  {
+    "num": "15.6",
+    "rule": "The critical user documentation should be drafted before the program is built, for it embodies basic planning decisions. It should describe nine things (see the chapter)."
+  },
+  {
+    "num": "15.7",
+    "rule": "A program should be shipped with a few test cases, some for valid input data, some for borderline input data, and some for clearly invalid input data."
+  },
+  {
+    "num": "15.8",
+    "rule": "Documentation of program internals, for the person who must modify it, also demands a prose overview, which should contain five kinds of things (see the chapter)."
+  },
+  {
+    "num": "15.9",
+    "rule": "The flow chart is a most thoroughly oversold piece of program documentation; the detailed blow-by-blow flow chart is a nuisance, obsoleted by written high level languages. (A flow chart is a diagrammed high level language.)"
+  },
+  {
+    "num": "15.10",
+    "rule": "Few programs need more than a onepage flow chart, if that. (MILSPEC documentation requirements are really wrong on this point.)"
+  },
+  {
+    "num": "15.11",
+    "rule": "One does indeed need a program structure graph, which does not need the ANSI flowcharting standards."
+  },
+  {
+    "num": "15.12",
+    "rule": "To keep documentation maintained, it is crucial that it be incorporated in the source program, rather than kept as a separate document."
+  },
+  {
+    "num": "15.13",
+    "rule": "Three notions are key to minimizing the documentation burden:<br>\n• Use parts of the program that have to be there anyway, such as names and declarations, to carry as much of the documentation as possible.<br>\n• Use space and format to show subordination and nesting and to improve readability.<br>\n• Insert the necessary prose documentation into the program as paragraphs of comment, especially as module headers."
+  },
+  {
+    "num": "15.14",
+    "rule": "In documentation for use by program modifiers, tell why things are like they are, rather than merely how they are. Purpose is the key to understanding even high level language syntax does not at all convey purpose."
+  },
+  {
+    "num": "15.15",
+    "rule": "Self-documenting programming techniques find their greatest use and power in high level languages used with online systems, which are the tools one should be using."
+  },
+  {
+    "num": "E.1",
+    "rule": "Software systems are perhaps the most intricate and complex (in terms of number of distinct kinds of parts) of the things humanity makes."
+  },
+  {
+    "num": "E.2",
+    "rule": "The tar pit of software engineering will continue to be sticky for a long time to come."
+  }
+]

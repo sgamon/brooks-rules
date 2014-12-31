@@ -1,0 +1,14 @@
+{
+  "name": "brooks-rules",
+  "version": "1.0.0",
+  "description": "Rules from Brooks' Mythical Man Month, in json format.",
+  "main": "brooks-rules.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brooks"
+  ],
+  "author": "Scott Gamon",
+  "license": "MIT"
+}
