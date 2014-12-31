@@ -10,5 +10,9 @@
     "brooks"
   ],
   "author": "Scott Gamon",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgamon/brooks-rules"
+  }
 }
