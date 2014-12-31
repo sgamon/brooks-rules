@@ -1,0 +1,22 @@
+{
+  "name": "brooks-rules",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sgamon/brooks-rules",
+  "authors": [
+    "Scott Gamon"
+  ],
+  "description": "Rules from Brooks' Mythical Man Month, in json format.",
+  "main": "brooks-rules.json",
+  "keywords": [
+    "brooks"
+  ],
+  "license": "MIT"
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
